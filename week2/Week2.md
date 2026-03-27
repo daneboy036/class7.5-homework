@@ -15,8 +15,8 @@ week: "2"
 
 git
 
-- [] terraform plan output saved as [plan.txt](./plan.txt)
-- [] terraform apply proof ![terraform-apply.png](./terraform-apply.png)
-- [] vm url: http://35.238.234.43// ![vm homepage](./vm-homepage.png)
-- [] [Gate Result](./gate_result.json)
-- [] [Badge](./badge.txt)
+- [x] terraform plan output saved as [plan.txt](./plan.txt)
+- [x] terraform apply proof ![terraform-apply.png](./terraform-apply.png)
+- [x] vm url: http://35.238.234.43// ![vm homepage](./vm-homepage.png)
+- [x] [Gate Result](./gate_result.json)
+- [x] [Badge](./badge.txt)
