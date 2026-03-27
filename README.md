@@ -3,3 +3,4 @@
 | Week | Deliverables                  | Notes |
 | ---- | ----------------------------- | ----- |
 | 1    | [Week 1](./week1/Week%201.md) |       |
+| 1    | [Week 2](./week2/Week2.md)    |       |
