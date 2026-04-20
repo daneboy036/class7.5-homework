@@ -3,8 +3,8 @@ tags:
   - BMC
   - GCP
   - homework
-name: Homework Week 1
-week: "1"
+name: Homework Week 2
+week: "2"
 ---
 
 # Overview
@@ -17,4 +17,4 @@ week: "1"
 
 [Gate Results](./gate_result.json)
 
-![Home Page](Week1_Homepage.png)
+![Home Page](Week2_Homepage.png)
