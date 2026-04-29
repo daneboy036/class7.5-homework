@@ -7,3 +7,4 @@
 | 3    | [Week 3](./week3/Week%203.md) |             |
 | 4    |                               | No homework |
 | 5    | [Week 5](./week5/Week%205.md) |             |
+| 5    | [Week 7](./week7/Week%207.md) |             |
