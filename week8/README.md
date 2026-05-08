@@ -22,9 +22,6 @@ The goals of this week's project are to document the creation of a working Manag
 - [x] [Q & A](./docs/questions-and-answers.md)
 - [x] [Runbook](./docs/runbook.md)
 - [x] [Terraform](./docs/terraform.md)
-
-# Deliverables -- Be A Man
-
 - [x] Terraform Apply
       ![TF Apply](./deliverables/tf-apply.png)
 - [x] Terraform State
