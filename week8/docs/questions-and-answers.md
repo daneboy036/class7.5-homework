@@ -9,28 +9,28 @@ It's best to strive for both but fault tolerance will often be more expensive.
 - Explain the difference between autoscaling and elasticity.
   <br >
 
-  Elasticity is the ability of your system to grow and/or shrink on demand. The elasticity will generally be triggered based on load or demand. Autoscaling is automatically adjusting your resources.
+Elasticity is the ability of your system to grow and/or shrink on demand. The elasticity will generally be triggered based on load or demand. Autoscaling is automatically adjusting your resources.
 
 While they seem similar, you can be elastic without having autoscaling because you can manually grow/shrink resources. With autoscaling, the system shrinks or expands automatically in response to something.
 
 - What is vertical and horizontal autoscaling?
   <br >
 
-  Vertical scaling is the process of throwing more hardware at a problem. For example, you notice that during peak shopping hours, the memory on your server is at 90% so you add more RAM.
+Vertical scaling is the process of throwing more hardware at a problem. For example, you notice that during peak shopping hours, the memory on your server is at 90% so you add more RAM.
 
 Horizontal scaling is adding more resources. To build on the example above, instead of adding more ram, you'd add a second computer to help offset the load.
 
 - Is one better?
   <br >
 
-  Horizontal scaling will generally be more efficient and may be more cost efficient. The ability to vertically scale is capped by things like how much ram a system can use or limitations on processors. The ability to horizontally scale is less capped.
+Horizontal scaling will generally be more efficient and may be more cost efficient. The ability to vertically scale is capped by things like how much ram a system can use or limitations on processors. The ability to horizontally scale is less capped.
 
 - Are they feasible on prem?
   <br >
 
-  How feasible they are depends on the sitaution, the company and the budget. A company that runs their servers under someone's desk may find it easier to buy more ram than to add a second server for example. For horizontal and vertical scaling, on premise loads will hit a ceiling sooner than cloud loads.
+How feasible they are depends on the sitaution, the company and the budget. A company that runs their servers under someone's desk may find it easier to buy more ram than to add a second server for example. For horizontal and vertical scaling, on premise loads will hit a ceiling sooner than cloud loads.
 
-  A huge advantage of the cloud is the ability to scale on demand. In the cloud, you can add more instances on black Friday and remove them after. On premise, if you add more servers or buy more hardware then you're generally stuck with the purchases.
+A huge advantage of the cloud is the ability to scale on demand. In the cloud, you can add more instances on black Friday and remove them after. On premise, if you add more servers or buy more hardware then you're generally stuck with the purchases.
 
 - Explain what the difference between managed and unmanaged instance groups is.
   <br >
