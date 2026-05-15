@@ -11,6 +11,25 @@
   - this won't matter for making a global load balancer because internally gcp handles getting traffic from the load balancer to the backends regardless of region
 - You can add a named port to the MIG for your lb to reference but it worked without one
 
+## Load balancer flow
+
+```
+Forwarding Rule
+      ↓
+Target HTTP(S) Proxy
+      ↓
+URL Map
+      ↓
+Backend Services
+      ↓
+MIGs / NEGs / Buckets
+
+```
+
+- Should you use Global External Application Load Balancers or classic?
+  - use global for modern, complex global apps and classic for simple or established workloads
+  - global has more features like weight based splitting and header transformation
+
 # Troubleshooting
 
 I got an error like "The zone 'projects/bmc-7dot5/zones/us-central1-a' does not have enough resources available to fulfill the request. Try a different zone, or try again later" so I switched to a regional mig instead of putting it in one zone. that didn't work so I switched from n2-standard-2 to e2-small.
@@ -24,3 +43,4 @@ https://www.imperva.com/blog/how-anycast-works/
 https://oneuptime.com/blog/post/2026-02-23-how-to-create-gcp-instance-templates-with-terraform/view
 
 https://anant.us/blog/gcp-managed-instance-groups-w-terraform/
+https://www.geeksforgeeks.org/devops/create-load-balancer-in-gcp-using-terraform/

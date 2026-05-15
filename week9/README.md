@@ -22,6 +22,10 @@ The goals of this week's project are to document the creation of a working Exter
 - [x] Terraform State
       ![TF State](./deliverables/tf-state-list.png)
 
+# Deliverables -- BAM
+
+- [x] ![BAM 1 TF State](./deliverables/bam1-tf-state-list.png)
+
 # Documentation
 
 - [Notes](./docs/notes.md#general-notes)

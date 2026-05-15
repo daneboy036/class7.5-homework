@@ -2,7 +2,7 @@
 resource "google_compute_subnetwork" "private_subnet" {
   name                     = "private-subnet"
   ip_cidr_range            = "10.0.0.0/18"
-  region                   = "us-central1"
+  region                   = var.region
   network                  = google_compute_network.vpc.id
   private_ip_google_access = true # allow private instances to use google api and services even without a public ip
 
@@ -49,7 +49,7 @@ resource "google_compute_router_nat" "nat" {
 # ip for nat
 resource "google_compute_address" "nat_ip" {
   name         = "nat-ip"
-  region       = "us-central1"
+  region       = var.region
   address_type = "EXTERNAL"
   network_tier = "PREMIUM"
 
@@ -59,22 +59,6 @@ resource "google_compute_address" "nat_ip" {
 }
 
 # firewall rules 
-# resource "google_compute_firewall" "allow_ssh" {
-#   name    = "allow-ssh"
-#   network = google_compute_network.main.name
-
-#   allow {
-#     protocol = "tcp"
-#     ports    = ["22"]
-#   }
-
-#   source_ranges = ["0.0.0.0/0"] # Lab only
-
-#   depends_on = [
-#     google_compute_network.main
-#   ]
-# }
-
 resource "google_compute_firewall" "allow_http" {
   name    = "allow-http"
   network = google_compute_network.vpc.name

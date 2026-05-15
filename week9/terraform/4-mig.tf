@@ -1,4 +1,4 @@
-# template
+# template -- templates are global
 resource "google_compute_instance_template" "template" {
   name_prefix  = "web-server-"
   machine_type = "e2-small"
@@ -58,8 +58,8 @@ resource "google_compute_health_check" "healthcheck" {
 resource "google_compute_region_instance_group_manager" "mig" {
   name                      = "web-server-mig"
   base_instance_name        = "web-server"
-  region                    = "us-central1"
-  distribution_policy_zones = ["us-central1-a", "us-central1-f"]
+  region                    = var.region
+  distribution_policy_zones = var.zones
 
   version {
     instance_template = google_compute_instance_template.template.id
