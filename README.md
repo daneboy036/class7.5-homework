@@ -9,3 +9,4 @@
 | 5    | [Week 5](./week5/README.md) |             |
 | 5    | [Week 7](./week7/README.md) |             |
 | 5    | [Week 8](./week8/README.md) |             |
+| 5    | [Week 9](./week9/README.md) |             |
